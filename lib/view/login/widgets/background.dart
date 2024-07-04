@@ -18,6 +18,9 @@ class LoginBackgroundWidget extends StatelessWidget {
                   bottomLeft: Radius.circular(30),
                 ),
                 color: Color(0xfffd4350),
+                gradient: LinearGradient(
+                  colors: [Color(0xfff73d4a), Color(0xfff53b49)],
+                ),
               ),
             ),
           ),
