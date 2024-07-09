@@ -7,7 +7,7 @@ class LoginBackgroundWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(100),
+      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 50),
       child: Row(
         children: [
           Expanded(

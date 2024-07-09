@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_concept/shared/widgets/custom_button.dart';
 import 'package:login_concept/shared/widgets/custom_input.dart';
 
 class LoginFormWidget extends StatelessWidget {
@@ -21,8 +22,8 @@ class LoginFormWidget extends StatelessWidget {
         ],
         color: Colors.white,
       ),
-      width: (size.width * .5).clamp(350, 450),
-      height: 650,
+      width: (size.width * .5).clamp(320, 330),
+      height: (size.height * .6).clamp(350, 490),
       child: const Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -34,7 +35,11 @@ class LoginFormWidget extends StatelessWidget {
             icon: Icons.password,
             isPassword: true,
           ),
-          Placeholder(fallbackHeight: 30),
+          CustomButton(
+            width: double.maxFinite,
+            text: "Sign up",
+            color: Colors.red,
+          ),
           MouseRegion(
             cursor: SystemMouseCursors.click,
             child: Text.rich(TextSpan(
