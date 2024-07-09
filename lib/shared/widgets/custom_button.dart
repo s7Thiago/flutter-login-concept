@@ -5,6 +5,7 @@ class CustomButton extends StatelessWidget {
   final double height;
   final String text;
   final Color color;
+  final VoidCallback onTap;
 
   const CustomButton({
     super.key,
@@ -12,6 +13,7 @@ class CustomButton extends StatelessWidget {
     this.height = 40,
     this.text = "",
     this.color = Colors.lightBlue,
+    required this.onTap,
   });
 
   @override
@@ -21,7 +23,7 @@ class CustomButton extends StatelessWidget {
       color: color,
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
-        onTap: () {},
+        onTap: onTap,
         borderRadius: BorderRadius.circular(20),
         child: Container(
             alignment: Alignment.center,
