@@ -5,5 +5,6 @@ class Routes {
   static const String profile = '/profile';
   static const String settings = '/settings';
   static const String about = '/about';
+  static const String randomImg = '/random-img';
   static const String notFound = '/404';
 }

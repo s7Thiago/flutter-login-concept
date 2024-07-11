@@ -44,17 +44,20 @@ class LoginFormWidget extends StatelessWidget {
               Navigator.of(context).pushNamed(Routes.home);
             },
           ),
-          const MouseRegion(
+          MouseRegion(
             cursor: SystemMouseCursors.click,
-            child: Text.rich(TextSpan(
-              text: "Have an account? ",
-              children: [
-                TextSpan(
-                  text: "Sign in",
-                  style: TextStyle(color: Colors.red),
-                ),
-              ],
-            )),
+            child: InkWell(
+              onTap: () => Navigator.of(context).pushNamed(Routes.randomImg),
+              child: const Text.rich(TextSpan(
+                text: "Have an account? ",
+                children: [
+                  TextSpan(
+                    text: "Sign in",
+                    style: TextStyle(color: Colors.red),
+                  ),
+                ],
+              )),
+            ),
           )
         ],
       ),
