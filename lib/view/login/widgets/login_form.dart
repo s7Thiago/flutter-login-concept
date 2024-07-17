@@ -41,7 +41,7 @@ class LoginFormWidget extends StatelessWidget {
             text: "Sign up",
             color: Colors.red,
             onTap: () {
-              Navigator.of(context).pushNamed(Routes.home);
+              Navigator.of(context).pushNamed(Routes.counter);
             },
           ),
           MouseRegion(

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login_concept/shared/routes.dart';
-import 'package:login_concept/view/home/home.dart';
+import 'package:login_concept/view/counter/counter.dart';
 import 'package:login_concept/view/login/login.dart';
+import 'package:login_concept/view/projects/projects.dart';
 import 'package:login_concept/view/randomImages/random_images.dart';
 
 void main() {
@@ -16,11 +17,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        Routes.home: (context) => const HomeScreen(),
+        Routes.home: (context) => const Projects(),
+        Routes.counter: (context) => const CounterScreen(),
         Routes.login: (context) => const LoginScreen(),
         Routes.randomImg: (context) => const RandomImages(),
       },
-      initialRoute: Routes.login,
+      initialRoute: Routes.home,
     );
   }
 }
